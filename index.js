@@ -5,6 +5,7 @@ const BalancesAPI = require('./datasources/balances');
 const typeDefs = gql`
     type Query {
         balances:[Balance]
+        balanceById(id:ID): Balance
     },
     type Balance {
         id: ID!,
@@ -17,7 +18,11 @@ const resolvers ={
     Query: {
         balances: (parent, args, {dataSources}, info) => {
             return dataSources.BalancesAPI.getBalances();
+        },
+        balanceById: (parent, {id}, {dataSources}, info) => {
+            return dataSources.BalancesAPI.getBalanceById(id);
         }
+            
     }
 };
 const dataSources = () => ({

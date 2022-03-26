@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "type":"Debit",
+        "rail":"Wire",
+        "amount":14
+
+    },
+    {
+        "id":2,
+        "type":"Credit",
+        "rail":"Zelle",
+        "amount":13
+    },
+    {
+        "id":3,
+        "type":"Debit",
+        "rail":"eCheck",
+        "amount":140
+    }
+]
