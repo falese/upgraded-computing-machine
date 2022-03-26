@@ -1,21 +1,24 @@
 [
     {
         "id":1,
-        "type":"Debit",
+        "direction":"Debit",
         "rail":"Wire",
-        "amount":14
+        "amount":13,
+        "balances":[1]
 
     },
     {
         "id":2,
-        "type":"Credit",
+        "direction":"Credit",
         "rail":"Zelle",
-        "amount":13
+        "amount":27,
+        "balances":[1]
     },
     {
         "id":3,
-        "type":"Debit",
+        "direction":"Debit",
         "rail":"eCheck",
-        "amount":140
+        "amount":140,
+        "balances":[3]
     }
 ]
