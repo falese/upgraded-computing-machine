@@ -9,7 +9,8 @@ class BalancesAPI extends DataSource{
     initialize(config){
 
     }
-    getBalances(){
+    getBalances(args){
+        const balance= _.filter(balances, args);
         return balances;
     }
     getBalanceById(id){
